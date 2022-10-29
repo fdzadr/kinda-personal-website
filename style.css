@@ -1,0 +1,195 @@
+* {
+    background: #2C394B;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background: #FF4C29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > ul {
+    background-color: #FF4C29;
+}
+
+nav > ul > a:hover {
+    color: white;
+}
+
+nav > ul > a {
+    color: gainsboro;
+    text-decoration: none;
+    background-color: #FF4C29;
+}
+
+nav > ul > button {
+    color: gainsboro;
+    text-decoration: none;
+    background-color: #FF4C29;
+    border: none;
+    cursor: pointer;
+}
+
+nav > ul > button:hover {
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 64px;
+}
+
+h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+}
+
+.container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 2px solid #FF4C29;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+.container > img {
+    width: 30%;
+    height: 100%;
+    padding-right: 10px;
+    float: left;
+}
+
+.container > p {
+    width: 70%;
+    height: 100%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+aside > article {
+    border: 2px solid #FF4C29;
+}
+
+aside > article > figure > img {
+    width: 100%;
+    max-height: 200px;
+    border: 2px solid #FF4C29;
+}
+
+aside > article > h4 {
+    text-align: center;
+}
+
+#special-btn {
+    text-align: center; 
+}
+
+#special-btn > button {
+    margin-top: 20px;
+    border: 2px solid #FF4C29;
+    padding: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.special-btn > button:hover {
+    background: white;
+    color: #FF4C29;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #FF4C29;
+    text-align: center;
+}
+
+footer > a {
+    font-size: 64px;
+    cursor: pointer;
+    background-color: #FF4C29;
+}
+
+footer > a > i {
+    background-color: #FF4C29;
+    padding-left: 10px;
+}
+
+footer > h3 {
+    background: #FF4C29;
+    padding-top: 30px;
+}
+
+footer > p {
+    background: #FF4C29;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav > ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .container > img {
+        float: none;
+        width: 100%;
+    }
+
+    .container > p {
+         width: 100%;
+    }
+}
